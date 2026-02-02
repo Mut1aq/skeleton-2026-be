@@ -1,8 +1,11 @@
 {
   "name": "skeleton-2026-be",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Starter repository for NestJS framework projects",
+  "author": "mut1aq",
+  "engines": {
+    "node": "24.13.0"
+  },
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
