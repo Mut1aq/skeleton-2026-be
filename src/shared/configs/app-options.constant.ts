@@ -1,3 +1,5 @@
+import { ConfigModuleOptions } from '@nestjs/config';
+import Joi from 'joi';
 import {
   I18nOptions,
   QueryResolver,
@@ -22,4 +24,18 @@ export const i18nOptions: I18nOptions = {
     AcceptLanguageResolver,
     new CookieResolver(['lang', 'locale', 'l']),
   ],
+};
+
+export const configOptions: ConfigModuleOptions = {
+  envFilePath: `environments/.development.env`,
+  isGlobal: true,
+  cache: true,
+  validationSchema: Joi.object({
+    // Core application
+    PORT: Joi.number().required().default(3000),
+    ALLOWED_HOSTS: Joi.string().required(),
+    PREFIX: Joi.string().min(3).max(10).required(),
+    APP_NAME: Joi.string().min(3).max(30).required(),
+    NODE_ENV: Joi.string().valid('dev', 'prod', 'stable').required(),
+  }),
 };
