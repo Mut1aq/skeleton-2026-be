@@ -5,30 +5,11 @@
 import type { Path } from "nestjs-i18n";
 /* prettier-ignore */
 export type I18nTranslations = {
-    "activities": {
-        "coordinatorNotAssigned": string;
-        "gradesOverflow": string;
-        "studentGradeExceedMaxGrade": string;
-    };
     "auth": {
         "errors": {
             "unauthorized": string;
             "loginFirst": string;
             "wrongCredentials": string;
-            "register": string;
-            "login": string;
-            "ability": {
-                "create": string;
-                "read": string;
-                "update": string;
-                "delete": string;
-            };
-            "alreadyLoggedIn": string;
-            "wrongCurrentPassword": string;
-            "passwordsNotMatched": string;
-            "wrongEmail": string;
-            "incorrectOtp": string;
-            "otpNotExpired": string;
         };
         "success": {
             "login": string;
@@ -37,40 +18,6 @@ export type I18nTranslations = {
             "changePassword": string;
         };
     };
-    "clos": {
-        "mustTieCourseWithProgram": string;
-        "courseMustBeWithinProgram": string;
-        "cloMustBelongToTheCurrentSemester": string;
-        "cloCompetencyRequired": string;
-    };
-    "common": {
-        "allInserted": string;
-        "someInserted": string;
-        "generateOtp": string;
-        "incorrectOtp": string;
-        "expiredOtp": string;
-        "noCurrentSemester": string;
-    };
-    "course-sections": {
-        "errors": {
-            "instructorNotOwner": string;
-            "studentNotInSection": string;
-            "courseSectionHasActivities": string;
-            "cannotChangeStatus": string;
-            "sectionNotInCurrentSemester": string;
-        };
-        "success": {
-            "withdrawn": string;
-            "registered": string;
-        };
-    };
-    "courses": {
-        "programManagerEdit": string;
-    };
-    "departments": {
-        "departmentManagerNotInDepartment": string;
-        "deleteProgramsFirst": string;
-    };
     "entities": {
         "user": string;
         "admin": string;
@@ -78,120 +25,9 @@ export type I18nTranslations = {
         "message": string;
         "email": string;
         "notification": string;
-        "country": string;
-        "requestResponse": string;
-        "faculty": string;
-        "department": string;
-        "program": string;
-        "course": string;
-        "courseSection": string;
-        "exam": string;
-        "question": string;
-        "grade": string;
-        "departmentManager": string;
-        "programManager": string;
-        "coordinator": string;
-        "academicYear": string;
-        "semester": string;
-        "plo": string;
-        "clo": string;
-        "activity": string;
-        "evaluationCriterion": string;
-        "correctiveAction": string;
-        "config": string;
-        "sync": string;
-        "institutionalGoal": string;
-        "institutionalLearningGoal": string;
-        "graduateAttribute": string;
-        "qualificationsFrameworkDescriptor": string;
-        "indirectMeasurement": string;
-        "keyPerformanceIndicator": string;
-        "strategicPlan": string;
-        "facultyGoal": string;
-        "facultyGoalKpi": string;
-        "facultyGoalControl": string;
-        "facultyGoalAchievement": string;
-        "programGoal": string;
-        "axis": string;
-        "station": string;
-        "executiveActivity": string;
-        "executiveActivityKpi": string;
-        "executiveActivityControl": string;
-        "executiveActivityAchievement": string;
-        "nationality": string;
-        "competency": string;
-        "reason": string;
-        "recommendation": string;
-        "support": string;
-        "justification": string;
     };
     "errors": {
         "developmentError": string;
-    };
-    "faculties": {
-        "deanNotInDepartment": string;
-        "deleteDepartmentsFirst": string;
-    };
-    "grades": {
-        "errors": {
-            "oldStrategicPlan": string;
-            "filesTypeMismatch": string;
-            "axisHasInstitutionalGoals": string;
-            "editNotAllowedAfterStartDate": string;
-            "cloHasQuestions": string;
-            "competencyHasClos": string;
-            "configAlreadyExists": string;
-            "semesterNotFound": string;
-            "configNotFound": string;
-            "correctiveActionExists": string;
-            "invalidReasonsData": string;
-            "invalidRecommendationsData": string;
-            "semesterNotInAcademicYear": string;
-            "courseSectionHasStudents": string;
-            "courseSectionHasActivities": string;
-            "executiveActivityOldGoal": string;
-            "executiveActivityUpdateOldGoal": string;
-            "editNotAllowedAfterEndDate": string;
-            "invalidControlsData": string;
-            "userNotAuthorized": string;
-            "kpiPeriodExpired": string;
-            "userNotAuthorizedForApproval": string;
-            "userNotAuthorizedForRejection": string;
-            "requiredValueMissing": string;
-            "requiredDropdownValueMissing": string;
-            "requiredEmailMissing": string;
-            "requiredFileMissing": string;
-            "requiredNumberMissing": string;
-            "dropdownWithoutOptions": string;
-            "controlsLinkedToKpi": string;
-            "programsLinkedToFaculty": string;
-            "controlsLinkedToFacultyGoalKpi": string;
-            "studentProhibited": string;
-            "studentNotRegistered": string;
-            "studentWithdrawn": string;
-            "plosLinkedToGraduateAttribute": string;
-            "cantCreateOldStrategicPlan": string;
-            "facultyGoalsLinkedToInstitutionalGoal": string;
-            "cantUpdateOldAxis": string;
-            "cantEditAfterPlanEnd": string;
-            "usersLinkedToNationality": string;
-            "closLinkedToPlo": string;
-            "unauthorizedProgramAccess": string;
-            "learningGoalsLinkedToDescriptor": string;
-            "maxThreeSemestersPerAcademicYear": string;
-            "goalsLinkedToStrategicPlan": string;
-            "cannotEditStartedStrategicPlan": string;
-            "currentSemesterNotFound": string;
-            "programGoalsLinkedToInstitutionalGoal": string;
-            "gradeOutOfRange": string;
-        };
-    };
-    "programs": {
-        "programManagerNotInDepartment": string;
-        "deleteCoursesFirst": string;
-    };
-    "questions": {
-        "gradeOverflow": string;
     };
     "shared": {
         "success": {
